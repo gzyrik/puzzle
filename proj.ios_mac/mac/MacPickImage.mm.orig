@@ -1,0 +1,10 @@
+#include "PickImage.h"
+void pickImage(const std::function<void()>& transition,
+               const std::function<void(cocos2d::Texture2D*)>& completion)
+{
+<<<<<<< HEAD
+=======
+    //cocos2d::Texture2D* tex2D = cocos2d::Director::getInstance()->getTextureCache()->addImage("Image.png");
+>>>>>>> 6d104c6... d
+    completion(nullptr);
+}

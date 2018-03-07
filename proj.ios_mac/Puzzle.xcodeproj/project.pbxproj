@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04F24EA79E2FEB16726F1559 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D364C16A410D74FA7F2CF54 /* libcocos2d Mac.a */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		45192C1B1C30FEBD00B60D77 /* FilterSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45192C161C30FEBD00B60D77 /* FilterSprite.cpp */; };
+		45192C1C1C30FEBD00B60D77 /* Tortoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45192C181C30FEBD00B60D77 /* Tortoise.cpp */; };
+		45192C261C30FEC300B60D77 /* PuzzleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45192C1F1C30FEC300B60D77 /* PuzzleLayer.cpp */; };
+		45192C271C30FEC300B60D77 /* Tetris.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45192C211C30FEC300B60D77 /* Tetris.cpp */; };
+		45192C281C30FEC300B60D77 /* TetrisLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45192C231C30FEC300B60D77 /* TetrisLayer.cpp */; };
+		45199B4B1C1D7EDA00D70B5F /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 45199B4A1C1D7EDA00D70B5F /* libiconv.tbd */; };
+		458759271C1BC98A00A54A7D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 458759261C1BC98A00A54A7D /* libz.tbd */; };
+		458759291C1BC9AB00A54A7D /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 458759281C1BC9AB00A54A7D /* libiconv.tbd */; };
+		4587592B1C1BCC0E00A54A7D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4587592A1C1BCC0E00A54A7D /* OpenGLES.framework */; };
+		4587592D1C1BCC1B00A54A7D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4587592C1C1BCC1B00A54A7D /* libz.tbd */; };
+		4587592F1C1BCC2900A54A7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4587592E1C1BCC2900A54A7D /* UIKit.framework */; };
+		458759311C1BCC3200A54A7D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458759301C1BCC3200A54A7D /* CoreMotion.framework */; };
+		458759371C1BE4A800A54A7D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 458759361C1BE4A800A54A7D /* Images.xcassets */; };
+		4590AA2E1C315E040083F9D8 /* PuzzleLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45192C1F1C30FEC300B60D77 /* PuzzleLayer.cpp */; };
+		4590AA301C315E040083F9D8 /* Tetris.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45192C211C30FEC300B60D77 /* Tetris.cpp */; };
+		4590AA321C315E040083F9D8 /* TetrisLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45192C231C30FEC300B60D77 /* TetrisLayer.cpp */; };
+		4590AA341C315E040083F9D8 /* FilterSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45192C161C30FEBD00B60D77 /* FilterSprite.cpp */; };
+		4590AA361C315E040083F9D8 /* Tortoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45192C181C30FEBD00B60D77 /* Tortoise.cpp */; };
+		45D6FECC1C40B06F00510F1D /* 3d in Resources */ = {isa = PBXBuildFile; fileRef = 45D6FEC61C40B06F00510F1D /* 3d */; };
+		45D6FECD1C40B06F00510F1D /* 3d in Resources */ = {isa = PBXBuildFile; fileRef = 45D6FEC61C40B06F00510F1D /* 3d */; };
+		45D6FECE1C40B06F00510F1D /* dat in Resources */ = {isa = PBXBuildFile; fileRef = 45D6FEC71C40B06F00510F1D /* dat */; };
+		45D6FECF1C40B06F00510F1D /* dat in Resources */ = {isa = PBXBuildFile; fileRef = 45D6FEC71C40B06F00510F1D /* dat */; };
+		45D6FED01C40B06F00510F1D /* fnt in Resources */ = {isa = PBXBuildFile; fileRef = 45D6FEC81C40B06F00510F1D /* fnt */; };
+		45D6FED11C40B06F00510F1D /* fnt in Resources */ = {isa = PBXBuildFile; fileRef = 45D6FEC81C40B06F00510F1D /* fnt */; };
+		45D6FED21C40B06F00510F1D /* fx in Resources */ = {isa = PBXBuildFile; fileRef = 45D6FEC91C40B06F00510F1D /* fx */; };
+		45D6FED31C40B06F00510F1D /* fx in Resources */ = {isa = PBXBuildFile; fileRef = 45D6FEC91C40B06F00510F1D /* fx */; };
+		45D6FED41C40B06F00510F1D /* snd in Resources */ = {isa = PBXBuildFile; fileRef = 45D6FECA1C40B06F00510F1D /* snd */; };
+		45D6FED51C40B06F00510F1D /* snd in Resources */ = {isa = PBXBuildFile; fileRef = 45D6FECA1C40B06F00510F1D /* snd */; };
+		45D6FED61C40B06F00510F1D /* ui in Resources */ = {isa = PBXBuildFile; fileRef = 45D6FECB1C40B06F00510F1D /* ui */; };
+		45D6FED71C40B06F00510F1D /* ui in Resources */ = {isa = PBXBuildFile; fileRef = 45D6FECB1C40B06F00510F1D /* ui */; };
+		45FA8A0E1C1D77BC0019D9FE /* iOSPickImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45FA8A0D1C1D77BC0019D9FE /* iOSPickImage.mm */; };
+		45FA8A111C1D78740019D9FE /* MacPickImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45FA8A0F1C1D781A0019D9FE /* MacPickImage.mm */; };
+		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
+		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
+		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
+		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
+		503AE10117EB989F00D1A890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FC17EB989F00D1A890 /* main.m */; };
+		503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FF17EB989F00D1A890 /* RootViewController.mm */; };
+		503AE10517EB98FF00D1A890 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503AE10317EB98FF00D1A890 /* main.cpp */; };
+		503AE11B17EB9C5A00D1A890 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11A17EB9C5A00D1A890 /* IOKit.framework */; };
+		5087E76317EB910900C73F5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		5087E76817EB910900C73F5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		5087E76917EB910900C73F5D /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
+		5087E76A17EB910900C73F5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
+		5087E76B17EB910900C73F5D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
+		5087E78917EB974C00C73F5D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5087E78817EB974C00C73F5D /* AppKit.framework */; };
+		5087E78B17EB975400C73F5D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5087E78A17EB975400C73F5D /* OpenGL.framework */; };
+		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
+		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		C1A34EC3B3688816E3878B27 /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89AD4506B527F53C15871621 /* libcocos2d iOS.a */; };
+		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
+		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
+		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D364C16A410D74FA7F2CF54 /* libcocos2d Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d Mac.a"; path = "$(COCOS_FRAMEWORK_ROOT)/prebuilt/mac/libcocos2d Mac.a"; sourceTree = "<absolute>"; };
+		1D6058910D05DD3D006BFB54 /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		45192C161C30FEBD00B60D77 /* FilterSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterSprite.cpp; sourceTree = "<group>"; };
+		45192C171C30FEBD00B60D77 /* FilterSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterSprite.h; sourceTree = "<group>"; };
+		45192C181C30FEBD00B60D77 /* Tortoise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tortoise.cpp; sourceTree = "<group>"; };
+		45192C191C30FEBD00B60D77 /* Tortoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tortoise.h; sourceTree = "<group>"; };
+		45192C1A1C30FEBD00B60D77 /* Precompiled_headers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Precompiled_headers.h; sourceTree = "<group>"; };
+		45192C1F1C30FEC300B60D77 /* PuzzleLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PuzzleLayer.cpp; sourceTree = "<group>"; };
+		45192C201C30FEC300B60D77 /* PuzzleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleLayer.h; sourceTree = "<group>"; };
+		45192C211C30FEC300B60D77 /* Tetris.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tetris.cpp; sourceTree = "<group>"; };
+		45192C221C30FEC300B60D77 /* Tetris.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tetris.h; sourceTree = "<group>"; };
+		45192C231C30FEC300B60D77 /* TetrisLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TetrisLayer.cpp; sourceTree = "<group>"; };
+		45192C241C30FEC300B60D77 /* TetrisLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TetrisLayer.h; sourceTree = "<group>"; };
+		45199B4A1C1D7EDA00D70B5F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
+		454715041C0E01BC0096B6D9 /* PickImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickImage.h; sourceTree = "<group>"; };
+		458759261C1BC98A00A54A7D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		458759281C1BC9AB00A54A7D /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		4587592A1C1BCC0E00A54A7D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		4587592C1C1BCC1B00A54A7D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		4587592E1C1BCC2900A54A7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		458759301C1BCC3200A54A7D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		458759361C1BE4A800A54A7D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45D6FEC61C40B06F00510F1D /* 3d */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 3d; sourceTree = "<group>"; };
+		45D6FEC71C40B06F00510F1D /* dat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dat; sourceTree = "<group>"; };
+		45D6FEC81C40B06F00510F1D /* fnt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fnt; sourceTree = "<group>"; };
+		45D6FEC91C40B06F00510F1D /* fx */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fx; sourceTree = "<group>"; };
+		45D6FECA1C40B06F00510F1D /* snd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = snd; sourceTree = "<group>"; };
+		45D6FECB1C40B06F00510F1D /* ui */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ui; sourceTree = "<group>"; };
+		45FA8A0D1C1D77BC0019D9FE /* iOSPickImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = iOSPickImage.mm; path = ios/iOSPickImage.mm; sourceTree = SOURCE_ROOT; };
+		45FA8A0F1C1D781A0019D9FE /* MacPickImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MacPickImage.mm; path = mac/MacPickImage.mm; sourceTree = "<group>"; };
+		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
+		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		503AE0FA17EB989F00D1A890 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = ios/AppController.h; sourceTree = SOURCE_ROOT; };
+		503AE0FB17EB989F00D1A890 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppController.mm; path = ios/AppController.mm; sourceTree = SOURCE_ROOT; };
+		503AE0FC17EB989F00D1A890 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ios/main.m; sourceTree = SOURCE_ROOT; };
+		503AE0FD17EB989F00D1A890 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = ios/Prefix.pch; sourceTree = SOURCE_ROOT; };
+		503AE0FE17EB989F00D1A890 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ios/RootViewController.h; sourceTree = SOURCE_ROOT; };
+		503AE0FF17EB989F00D1A890 /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RootViewController.mm; path = ios/RootViewController.mm; sourceTree = SOURCE_ROOT; };
+		503AE10317EB98FF00D1A890 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = mac/main.cpp; sourceTree = "<group>"; };
+		503AE10417EB98FF00D1A890 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = mac/Prefix.pch; sourceTree = "<group>"; };
+		503AE11A17EB9C5A00D1A890 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		5087E76F17EB910900C73F5D /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5087E77C17EB970100C73F5D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5087E78817EB974C00C73F5D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5087E78A17EB975400C73F5D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		89AD4506B527F53C15871621 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "$(COCOS_FRAMEWORK_ROOT)/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
+		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45199B4B1C1D7EDA00D70B5F /* libiconv.tbd in Frameworks */,
+				458759311C1BCC3200A54A7D /* CoreMotion.framework in Frameworks */,
+				4587592F1C1BCC2900A54A7D /* UIKit.framework in Frameworks */,
+				4587592B1C1BCC0E00A54A7D /* OpenGLES.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */,
+				D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */,
+				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
+				D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */,
+				C1A34EC3B3688816E3878B27 /* libcocos2d iOS.a in Frameworks */,
+				4587592D1C1BCC1B00A54A7D /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5087E75C17EB910900C73F5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */,
+				503AE11B17EB9C5A00D1A890 /* IOKit.framework in Frameworks */,
+				5087E78B17EB975400C73F5D /* OpenGL.framework in Frameworks */,
+				5087E78917EB974C00C73F5D /* AppKit.framework in Frameworks */,
+				5087E76317EB910900C73F5D /* Foundation.framework in Frameworks */,
+				5087E76817EB910900C73F5D /* QuartzCore.framework in Frameworks */,
+				5087E76917EB910900C73F5D /* OpenAL.framework in Frameworks */,
+				5087E76A17EB910900C73F5D /* AVFoundation.framework in Frameworks */,
+				5087E76B17EB910900C73F5D /* AudioToolbox.framework in Frameworks */,
+				04F24EA79E2FEB16726F1559 /* libcocos2d Mac.a in Frameworks */,
+				458759271C1BC98A00A54A7D /* libz.tbd in Frameworks */,
+				458759291C1BC9AB00A54A7D /* libiconv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				5087E77117EB970100C73F5D /* Icons */,
+				503AE0FA17EB989F00D1A890 /* AppController.h */,
+				503AE0FB17EB989F00D1A890 /* AppController.mm */,
+				45FA8A0D1C1D77BC0019D9FE /* iOSPickImage.mm */,
+				503AE0FC17EB989F00D1A890 /* main.m */,
+				503AE0FD17EB989F00D1A890 /* Prefix.pch */,
+				503AE0FE17EB989F00D1A890 /* RootViewController.h */,
+				503AE0FF17EB989F00D1A890 /* RootViewController.mm */,
+			);
+			name = ios;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Puzzle.app */,
+				5087E76F17EB910900C73F5D /* Puzzle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				46880B8319C43A87006E1F66 /* Classes */,
+				46880B7519C43A67006E1F66 /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				080E96DDFE201D6D7F000001 /* ios */,
+				503AE10617EB990700D1A890 /* mac */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				D5CB42F08C6D43063F35C095 /* ios-libs */,
+				902F42B2BBC012D29E93F7B6 /* mac-libs */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45199B4A1C1D7EDA00D70B5F /* libiconv.tbd */,
+				458759301C1BCC3200A54A7D /* CoreMotion.framework */,
+				4587592E1C1BCC2900A54A7D /* UIKit.framework */,
+				4587592C1C1BCC1B00A54A7D /* libz.tbd */,
+				4587592A1C1BCC0E00A54A7D /* OpenGLES.framework */,
+				458759281C1BC9AB00A54A7D /* libiconv.tbd */,
+				458759261C1BC98A00A54A7D /* libz.tbd */,
+				8262943D1AAF051F00CB7CF7 /* Security.framework */,
+				503AE11A17EB9C5A00D1A890 /* IOKit.framework */,
+				5087E78A17EB975400C73F5D /* OpenGL.framework */,
+				5087E78817EB974C00C73F5D /* AppKit.framework */,
+				D44C620F132DFF4E0009C878 /* AudioToolbox.framework */,
+				D44C620D132DFF430009C878 /* AVFoundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				D44C620B132DFF330009C878 /* OpenAL.framework */,
+				BF1C47EA1293683800B63C5D /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45192C1D1C30FEC300B60D77 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				45192C1F1C30FEC300B60D77 /* PuzzleLayer.cpp */,
+				45192C201C30FEC300B60D77 /* PuzzleLayer.h */,
+				45192C211C30FEC300B60D77 /* Tetris.cpp */,
+				45192C221C30FEC300B60D77 /* Tetris.h */,
+				45192C231C30FEC300B60D77 /* TetrisLayer.cpp */,
+				45192C241C30FEC300B60D77 /* TetrisLayer.h */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		46880B7519C43A67006E1F66 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45D6FEC61C40B06F00510F1D /* 3d */,
+				45D6FEC71C40B06F00510F1D /* dat */,
+				45D6FEC81C40B06F00510F1D /* fnt */,
+				45D6FEC91C40B06F00510F1D /* fx */,
+				45D6FECA1C40B06F00510F1D /* snd */,
+				45D6FECB1C40B06F00510F1D /* ui */,
+			);
+			name = Resources;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		46880B8319C43A87006E1F66 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				45192C1D1C30FEC300B60D77 /* Games */,
+				45192C161C30FEBD00B60D77 /* FilterSprite.cpp */,
+				45192C171C30FEBD00B60D77 /* FilterSprite.h */,
+				45192C181C30FEBD00B60D77 /* Tortoise.cpp */,
+				45192C191C30FEBD00B60D77 /* Tortoise.h */,
+				45192C1A1C30FEBD00B60D77 /* Precompiled_headers.h */,
+				454715041C0E01BC0096B6D9 /* PickImage.h */,
+				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
+				46880B8519C43A87006E1F66 /* AppDelegate.h */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		503AE0F517EB97AB00D1A890 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				503AE0F617EB97AB00D1A890 /* Icon.icns */,
+				503AE0F717EB97AB00D1A890 /* Info.plist */,
+			);
+			name = Icons;
+			path = mac;
+			sourceTree = SOURCE_ROOT;
+		};
+		503AE10617EB990700D1A890 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				503AE0F517EB97AB00D1A890 /* Icons */,
+				503AE10317EB98FF00D1A890 /* main.cpp */,
+				45FA8A0F1C1D781A0019D9FE /* MacPickImage.mm */,
+				503AE10417EB98FF00D1A890 /* Prefix.pch */,
+			);
+			name = mac;
+			sourceTree = "<group>";
+		};
+		5087E77117EB970100C73F5D /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				458759361C1BE4A800A54A7D /* Images.xcassets */,
+				5087E77C17EB970100C73F5D /* Info.plist */,
+			);
+			name = Icons;
+			path = ios;
+			sourceTree = SOURCE_ROOT;
+		};
+		902F42B2BBC012D29E93F7B6 /* mac-libs */ = {
+			isa = PBXGroup;
+			children = (
+				1D364C16A410D74FA7F2CF54 /* libcocos2d Mac.a */,
+			);
+			name = "mac-libs";
+			sourceTree = "<group>";
+		};
+		D5CB42F08C6D43063F35C095 /* ios-libs */ = {
+			isa = PBXGroup;
+			children = (
+				89AD4506B527F53C15871621 /* libcocos2d iOS.a */,
+			);
+			name = "ios-libs";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Puzzle-mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Puzzle-mobile" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Puzzle-mobile";
+			productName = iphone;
+			productReference = 1D6058910D05DD3D006BFB54 /* Puzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5087E73D17EB910900C73F5D /* Puzzle-desktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5087E76C17EB910900C73F5D /* Build configuration list for PBXNativeTarget "Puzzle-desktop" */;
+			buildPhases = (
+				5087E74817EB910900C73F5D /* Resources */,
+				5087E75617EB910900C73F5D /* Sources */,
+				5087E75C17EB910900C73F5D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Puzzle-desktop";
+			productName = iphone;
+			productReference = 5087E76F17EB910900C73F5D /* Puzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = YFRQ6H8U97;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Puzzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				"zh-Hans",
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Puzzle-mobile */,
+				5087E73D17EB910900C73F5D /* Puzzle-desktop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D6FED61C40B06F00510F1D /* ui in Resources */,
+				45D6FECE1C40B06F00510F1D /* dat in Resources */,
+				45D6FECC1C40B06F00510F1D /* 3d in Resources */,
+				45D6FED41C40B06F00510F1D /* snd in Resources */,
+				45D6FED01C40B06F00510F1D /* fnt in Resources */,
+				45D6FED21C40B06F00510F1D /* fx in Resources */,
+				458759371C1BE4A800A54A7D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5087E74817EB910900C73F5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D6FED71C40B06F00510F1D /* ui in Resources */,
+				45D6FECF1C40B06F00510F1D /* dat in Resources */,
+				45D6FECD1C40B06F00510F1D /* 3d in Resources */,
+				45D6FED51C40B06F00510F1D /* snd in Resources */,
+				45D6FED11C40B06F00510F1D /* fnt in Resources */,
+				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
+				45D6FED31C40B06F00510F1D /* fx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				45192C281C30FEC300B60D77 /* TetrisLayer.cpp in Sources */,
+				45192C271C30FEC300B60D77 /* Tetris.cpp in Sources */,
+				45192C261C30FEC300B60D77 /* PuzzleLayer.cpp in Sources */,
+				45FA8A0E1C1D77BC0019D9FE /* iOSPickImage.mm in Sources */,
+				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				45192C1B1C30FEBD00B60D77 /* FilterSprite.cpp in Sources */,
+				45192C1C1C30FEBD00B60D77 /* Tortoise.cpp in Sources */,
+				503AE10117EB989F00D1A890 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5087E75617EB910900C73F5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4590AA2E1C315E040083F9D8 /* PuzzleLayer.cpp in Sources */,
+				4590AA301C315E040083F9D8 /* Tetris.cpp in Sources */,
+				4590AA321C315E040083F9D8 /* TetrisLayer.cpp in Sources */,
+				4590AA341C315E040083F9D8 /* FilterSprite.cpp in Sources */,
+				4590AA361C315E040083F9D8 /* Tortoise.cpp in Sources */,
+				45FA8A111C1D78740019D9FE /* MacPickImage.mm in Sources */,
+				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = YFRQ6H8U97;
+				ENABLE_BITCODE = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
+					"COCOS2D_DEBUG=1",
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/platform/ios",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/platform/ios/Simulation",
+				);
+				INFOPLIST_FILE = ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = " $(COCOS_FRAMEWORK_ROOT)/prebuilt/ios";
+				OTHER_LDFLAGS = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+				);
+				PRODUCT_NAME = Puzzle;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = YFRQ6H8U97;
+				ENABLE_BITCODE = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/platform/ios",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/platform/ios/Simulation",
+				);
+				INFOPLIST_FILE = ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = " $(COCOS_FRAMEWORK_ROOT)/prebuilt/ios";
+				OTHER_LDFLAGS = (
+					"$(_COCOS_LIB_IOS_BEGIN)",
+					"$(_COCOS_LIB_IOS_END)",
+				);
+				PRODUCT_NAME = Puzzle;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+		5087E76D17EB910900C73F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mac/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					CC_TARGET_OS_MAC,
+					"COCOS2D_DEBUG=1",
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/platform/mac",
+					"$(COCOS_FRAMEWORK_ROOT)/external/glfw3/include/mac",
+				);
+				INFOPLIST_FILE = mac/Info.plist;
+				LIBRARY_SEARCH_PATHS = "$(COCOS_FRAMEWORK_ROOT)/prebuilt/mac";
+				OTHER_LDFLAGS = (
+					"$(_COCOS_LIB_MAC_BEGIN)",
+					"$(_COCOS_LIB_MAC_END)",
+				);
+				PRODUCT_NAME = Puzzle;
+				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";
+			};
+			name = Debug;
+		};
+		5087E76E17EB910900C73F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = mac/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					CC_TARGET_OS_MAC,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/platform/mac",
+					"$(COCOS_FRAMEWORK_ROOT)/external/glfw3/include/mac",
+				);
+				INFOPLIST_FILE = mac/Info.plist;
+				LIBRARY_SEARCH_PATHS = " $(COCOS_FRAMEWORK_ROOT)/prebuilt/mac";
+				OTHER_LDFLAGS = (
+					"$(_COCOS_LIB_MAC_BEGIN)",
+					"$(_COCOS_LIB_MAC_END)",
+				);
+				PRODUCT_NAME = Puzzle;
+				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COCOS_FRAMEWORKS = "$HOME/develop/cocos2d-x";
+				COCOS_FRAMEWORK_ROOT = "$COCOS_FRAMEWORKS/cocos2d-x-3.8";
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(COCOS_FRAMEWORK_ROOT)",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/base",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/physics",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/math",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/2d",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/ui",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/network",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/audio/include",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/editor-support",
+					"$(COCOS_FRAMEWORK_ROOT)/extensions",
+					"$(COCOS_FRAMEWORK_ROOT)/external",
+					"$(COCOS_FRAMEWORK_ROOT)/external/chipmunk/include/chipmunk",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COCOS_FRAMEWORKS = "$HOME/develop/cocos2d-x";
+				COCOS_FRAMEWORK_ROOT = "$COCOS_FRAMEWORKS/cocos2d-x-3.8";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(COCOS_FRAMEWORK_ROOT)",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/base",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/physics",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/math",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/2d",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/ui",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/network",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/audio/include",
+					"$(COCOS_FRAMEWORK_ROOT)/cocos/editor-support",
+					"$(COCOS_FRAMEWORK_ROOT)/extensions",
+					"$(COCOS_FRAMEWORK_ROOT)/external",
+					"$(COCOS_FRAMEWORK_ROOT)/external/chipmunk/include/chipmunk",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Puzzle-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5087E76C17EB910900C73F5D /* Build configuration list for PBXNativeTarget "Puzzle-desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5087E76D17EB910900C73F5D /* Debug */,
+				5087E76E17EB910900C73F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Puzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

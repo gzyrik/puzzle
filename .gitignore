@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+proj.android/gen
+proj.android/libs
+proj.ios_mac/build
+proj.win32/Debug.win32
